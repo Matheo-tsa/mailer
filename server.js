@@ -299,7 +299,7 @@ Maitre Gabard — Avocat au Barreau de Bordeaux
           <tr>
             <td style="background:#F7F5F0;padding:20px 40px;border-top:1px solid #E2DDD5;">
               <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#6B6560;text-align:center;">
-                21 rue du Tondu, 33000 Bordeaux — <a href="https://www.avocat-gabard.fr/" style="color:#2C4A3E;text-decoration:none;">avocat-gabard.fr</a>
+                21 rue du Tondu, 33000 Bordeaux — <a href="https://avocat-gabard.fr/" style="color:#2C4A3E;text-decoration:none;">avocat-gabard.fr</a>
               </p>
             </td>
           </tr>
