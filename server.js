@@ -22,8 +22,10 @@ const allowedOrigin = process.env.ALLOWED_ORIGIN.split(',');
 
 app.use(cors({
   origin: allowedOrigin,
-  methods: ['POST'],
+  methods: ['POST', 'OPTIONS'],
 }));
+
+app.options('*', cors());
 
 // Rate limiting — max 5 envois par IP toutes les 15 minutes
 // Protège contre le spam et les bots
