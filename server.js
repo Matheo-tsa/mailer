@@ -19,7 +19,7 @@ app.use(express.json());
 
 // CORS — n'accepte que l'origine du front Astro
 app.use(cors({
-  origin: process.env.ALLOWED_ORIGIN || 'http://localhost:4321',
+  origin: process.env.ALLOWED_ORIGIN,
   methods: ['POST'],
 }));
 
