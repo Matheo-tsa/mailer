@@ -18,8 +18,10 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json());
 
 // CORS — n'accepte que l'origine du front Astro
+const allowedOrigin = process.env.ALLOWED_ORIGIN.split(',');
+
 app.use(cors({
-  origin: process.env.ALLOWED_ORIGIN,
+  origin: allowedOrigin,
   methods: ['POST'],
 }));
 
@@ -357,4 +359,8 @@ app.post('/api/contact', async (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`🚀 Serveur démarré sur http://localhost:${PORT}`);
+});
+
+app.get('/', (req, res) => {
+  res.send('API de mail fonctionnelle ✅');
 });
